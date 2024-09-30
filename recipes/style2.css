@@ -7,17 +7,6 @@ body {
     font-family: Verdana, Georgia, Tahoma, sans-serif;
     font-size: 18px;
     display: flex;
-    overflow: hidden;
-}
-
-h1 {
-    margin-bottom: 15px;
-    padding: 15px 0;
-}
-
-h2, h3 {
-    margin-bottom: 10px;
-    margin-top: 20px;
 }
 
 .sidebar {
@@ -30,13 +19,20 @@ h2, h3 {
     overflow: hidden;
 }
 
-.sidebar h1 {
+h1 {
     text-align: center;
+    margin-bottom: 20px;
+    padding: 15px 0;
 }
+
 .sidebar ul li {
     list-style-type: none;
     margin-bottom: 5px;
     padding: 15px 0;
+}
+
+.sidebar ul li:hover {
+    background-color: rgba(8, 8, 138, 0.349);
 }
 
 .sidebar ul li a {
@@ -46,38 +42,11 @@ h2, h3 {
     font-size: 24px;
 }
 
-.sidebar ul li:hover {
-    background-color: rgba(8, 8, 138, 0.349);
-}
-
 .sidebar ul li a:hover {
-    color: darkgray;
-}
-
-.active {
-    background-color: rgba(3, 3, 36, 0.349);
-}
-
-.active a {
     color: darkgray;
 }
 
 .content {
     width: 100vw;
-    height: 100vh;
     overflow-y: auto;
-    padding: 10px;
-    margin-left: 30px;
-}
-.content ul li {
-    padding: 5px 0;
-}
-
-ol {
-    padding: 20px;
-    list-style: decimal;
-}
-
-ol li {
-    padding: 10px;
 }
